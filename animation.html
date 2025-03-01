@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Animation</title>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background-color: black;
+    margin: 25%;
+  }
+
+  @keyframes lighting {
+    50% {
+      filter: contrast(0.3);
+      transform: rotate(135deg);
+      background-color: rgba(255, 20, 145, 0.224);
+    }
+
+    100% {
+      filter: contrast(0.3);
+      transform: rotate(45deg);
+      background-color: rgba(213, 13, 213, 0.401);
+    }
+  }
+
+  .board {
+    width: 800px;
+    aspect-ratio: 1;
+  }
+
+  .row:nth-child(even)>.box:nth-child(even),
+  .row:nth-child(odd)>.box:nth-child(odd) {
+    background-color: rgba(249, 18, 249, 0.123);
+  }
+
+  .row:nth-child(even)>.box:nth-child(odd),
+  .row:nth-child(odd)>.box:nth-child(even) {
+    background-color: rgba(180, 12, 180, 0.193);
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+  }
+
+  .box {
+    width: 100px;
+    aspect-ratio: 1;
+    border: 1px solid white;
+    animation-name: lighting;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+</style>
+
+<body>
+  <div class="board">
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="row">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+</body>
+
+</html>
